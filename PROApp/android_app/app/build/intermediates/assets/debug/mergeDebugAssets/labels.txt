@@ -1,0 +1,5 @@
+V3_Black_Spot
+V3_Downy_Mildew
+V3_Dry_Leaf
+V3_Healthy_Leaf
+V3_Leaf_Holes

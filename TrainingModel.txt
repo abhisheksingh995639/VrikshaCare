@@ -1,0 +1,445 @@
+PS C:\Users\abhis\OneDrive\Desktop\PROEXE 2\PlantDisease> & "c:/Users/abhis/OneDrive/Desktop/PROEXE 2/PlantDisease/.venv/Scripts/python.exe" "c:/Users/abhis/OneDrive/Desktop/PROEXE 2/PlantDisease/train.py"
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1774471032.454736   27332 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1774471035.399990   27332 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Found 47954 images belonging to 5 classes.
+Found 10252 images belonging to 5 classes.
+Class indices: {'Black_Spot': 0, 'Downy_Mildew': 1, 'Dry_Leaf': 2, 'Healthy_Leaf': 3, 'Leaf_Holes': 4}
+Class weights: {0: np.float64(0.5034276415936171), 1: np.float64(4.029747899159664), 2: np.float64(2.4878858625162126), 3: np.float64(0.6595694931572794), 4: np.float64(1.1801156638365942)}
+I0000 00:00:1774471046.079928   27332 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ efficientnetb0 (Functional)          │ (None, 7, 7, 1280)          │       4,049,571 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ global_average_pooling2d             │ (None, 1280)                │               0 │
+│ (GlobalAveragePooling2D)             │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ batch_normalization                  │ (None, 1280)                │           5,120 │
+│ (BatchNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 128)                 │         163,968 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 5)                   │             645 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 4,219,304 (16.10 MB)
+ Trainable params: 167,173 (653.02 KB)
+ Non-trainable params: 4,052,131 (15.46 MB)
+Epoch 1/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 824ms/step - accuracy: 0.6916 - loss: 1.2219WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1423s 941ms/step - accuracy: 0.7534 - loss: 1.0406 - val_accuracy: 0.8931 - val_loss: 0.8005 - learning_rate: 0.0010
+Epoch 2/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1254s 837ms/step - accuracy: 0.8123 - loss: 0.8411 - val_accuracy: 0.8847 - val_loss: 0.7556 - learning_rate: 0.0010
+Epoch 3/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 761ms/step - accuracy: 0.8131 - loss: 0.8137WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1308s 873ms/step - accuracy: 0.8167 - loss: 0.8031 - val_accuracy: 0.8997 - val_loss: 0.7153 - learning_rate: 0.0010
+Epoch 4/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 952s 635ms/step - accuracy: 0.8202 - loss: 0.7959 - val_accuracy: 0.8805 - val_loss: 0.7469 - learning_rate: 0.0010
+Epoch 5/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 987s 658ms/step - accuracy: 0.8175 - loss: 0.8000 - val_accuracy: 0.8945 - val_loss: 0.7092 - learning_rate: 0.0010
+Epoch 6/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1099s 733ms/step - accuracy: 0.8205 - loss: 0.7921 - val_accuracy: 0.8857 - val_loss: 0.7246 - learning_rate: 0.0010
+Epoch 7/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1202s 802ms/step - accuracy: 0.8228 - loss: 0.7866 - val_accuracy: 0.8816 - val_loss: 0.7307 - learning_rate: 0.0010
+Epoch 8/30
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1838s 1s/step - accuracy: 0.8206 - loss: 0.7867 - val_accuracy: 0.8916 - val_loss: 0.7195 - learning_rate: 0.0010
+Epoch 1/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 668ms/step - accuracy: 0.7896 - loss: 0.8418WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1143s 754ms/step - accuracy: 0.8095 - loss: 0.8066 - val_accuracy: 0.9002 - val_loss: 0.7193 - learning_rate: 1.0000e-05
+Epoch 2/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 647ms/step - accuracy: 0.8337 - loss: 0.7690WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1105s 737ms/step - accuracy: 0.8389 - loss: 0.7618 - val_accuracy: 0.9089 - val_loss: 0.7003 - learning_rate: 1.0000e-05
+Epoch 3/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 609ms/step - accuracy: 0.8464 - loss: 0.7442WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1049s 700ms/step - accuracy: 0.8501 - loss: 0.7422 - val_accuracy: 0.9104 - val_loss: 0.6891 - learning_rate: 1.0000e-05
+Epoch 4/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 661ms/step - accuracy: 0.8613 - loss: 0.7261WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1128s 752ms/step - accuracy: 0.8595 - loss: 0.7264 - val_accuracy: 0.9171 - val_loss: 0.6715 - learning_rate: 1.0000e-05
+Epoch 5/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 664ms/step - accuracy: 0.8610 - loss: 0.7171WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1132s 755ms/step - accuracy: 0.8628 - loss: 0.7149 - val_accuracy: 0.9202 - val_loss: 0.6602 - learning_rate: 1.0000e-05
+Epoch 6/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 658ms/step - accuracy: 0.8703 - loss: 0.7002WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1122s 748ms/step - accuracy: 0.8700 - loss: 0.7027 - val_accuracy: 0.9259 - val_loss: 0.6482 - learning_rate: 1.0000e-05
+Epoch 7/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 658ms/step - accuracy: 0.8682 - loss: 0.6989WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1113s 742ms/step - accuracy: 0.8719 - loss: 0.6960 - val_accuracy: 0.9289 - val_loss: 0.6396 - learning_rate: 1.0000e-05
+Epoch 8/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 606ms/step - accuracy: 0.8765 - loss: 0.6895WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 1043s 696ms/step - accuracy: 0.8787 - loss: 0.6858 - val_accuracy: 0.9301 - val_loss: 0.6349 - learning_rate: 1.0000e-05
+Epoch 9/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 493ms/step - accuracy: 0.8837 - loss: 0.6758WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 833s 556ms/step - accuracy: 0.8822 - loss: 0.6761 - val_accuracy: 0.9310 - val_loss: 0.6294 - learning_rate: 1.0000e-05
+Epoch 10/10
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 0s 440ms/step - accuracy: 0.8885 - loss: 0.6686WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+1499/1499 ━━━━━━━━━━━━━━━━━━━━ 755s 503ms/step - accuracy: 0.8868 - loss: 0.6672 - val_accuracy: 0.9326 - val_loss: 0.6229 - learning_rate: 1.0000e-05
+
+Loading best weights from rose_disease_model.h5...
+321/321 ━━━━━━━━━━━━━━━━━━━━ 98s 303ms/step 
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Black_Spot       0.98      0.87      0.92      4071
+Downy_Mildew       0.84      0.97      0.90       510
+    Dry_Leaf       0.88      0.98      0.93       826
+Healthy_Leaf       0.91      0.97      0.94      3116
+  Leaf_Holes       0.92      0.98      0.95      1729
+
+    accuracy                           0.93     10252
+   macro avg       0.91      0.96      0.93     10252
+weighted avg       0.94      0.93      0.93     10252
+
+Confusion Matrix:
+[[3524   66   88  264  129]
+ [   5  496    0    9    0]
+ [   9    0  813    3    1]
+ [  30   29   20 3027   10]
+ [  17    0    4    7 1701]]
+
+Exporting to TFLite...
+Saved artifact at 'C:\Users\abhis\AppData\Local\Temp\tmp9ova99dr'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 224, 224, 3), dtype=tf.float32, name='keras_tensor_238')      
+Output Type:
+  TensorSpec(shape=(None, 5), dtype=tf.float32, name=None)
+Captures:
+  1247076190160: TensorSpec(shape=(1, 1, 1, 3), dtype=tf.float32, name=None)
+  1247076195920: TensorSpec(shape=(1, 1, 1, 3), dtype=tf.float32, name=None)
+  1247008038480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008039056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008039824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008037712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008038288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008040592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008042320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008042512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008041360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008040784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008041936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008044048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008037904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008044240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008043280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008042128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008043088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008044624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008045584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008043856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008045392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008046160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008043472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008044816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008046544: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008044432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008045008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008045968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008046736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008046928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247008045776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041929680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041931024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041929488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041930832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041931600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041931216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041932176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041931408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041930448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041931984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041932560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041933136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041932368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041930064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041932944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041933520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041934096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041933328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041934480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041929872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041933904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041934288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041932752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041935056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041933712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041935824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041936016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041935440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041934672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041936400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041936976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041935632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041935248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041936784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041937360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041937936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041937168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041938320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041936208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041937744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041938128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041936592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041938896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041937552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041939664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041934864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041939088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041939472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041940048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041940624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041939856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041939280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041940432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041941008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041941584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041940816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041941968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041938704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041941392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041941776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041940240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041942544: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041941200: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041943312: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041943504: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041942928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041942160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041943888: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041944464: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041943120: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041942736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041944272: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041944848: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041945424: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041944656: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041945040: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041943696: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041944080: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041945232: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042847952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042848144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041942352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247041938512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042846800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042846992: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042847376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042848720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042849296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042848528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042847184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042849104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042849680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042850256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042849488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042850640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042847568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042850064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042850448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042848912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042851216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042849872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042851984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042852176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042851600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042850832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042852560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042853136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042851792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042851408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042852944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042853520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042854096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042853328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042854480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042852368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042853904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042854288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042852752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042855056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042853712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042855824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042856016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042855440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042854672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042856400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042856976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042855632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042855248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042856784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042857360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042857936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042857168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042858320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042856208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042857744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042858128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042856592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042858896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042857552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042859664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042854864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042859088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042859472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042860048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042860624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042859856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042859280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042860432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042861008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042861584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042860816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042861968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042858704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042861392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042861776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042862544: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042862736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042862352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042862928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042858512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042862160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045960912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042860240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247042848336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045959952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045959760: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045960720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045961488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045962064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045961296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045962448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045960528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045961872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045962256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045961104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045963024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045961680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045963792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045963984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045963408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045962640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045964368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045964944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045963600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045963216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045964752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045965328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045965904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045965136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045966288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045964176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045965712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045966096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045964560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045966864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045965520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045967632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045962832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045967056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045967440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045968016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045968592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045967824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045967248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045968400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045968976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045969552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045968784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045969936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045966672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045969360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045969744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045968208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045970512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045969168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045971280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045971472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045970896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045970128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045971856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045972432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045971088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045970704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045972240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045972816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045973392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045972624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045973776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045971664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045973200: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045973584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045972048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045974352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045973008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045975120: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045975312: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045973968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045974544: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045974160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045966480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045975696: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045974928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045974736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045975888: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247045975504: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076188432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076189776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076189584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076189008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076188624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076188816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076190352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076189200: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076191120: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076190736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076190928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076188240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076191888: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076192464: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076189968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076189392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076192272: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076192848: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076193424: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076192656: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076193808: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076191696: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076193232: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076193616: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076192080: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076194384: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076193040: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076195152: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076191504: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076194576: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076194960: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076195536: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076196112: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076197648: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076198032: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076196880: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076196496: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076197840: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076195728: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076198800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  1247076198224: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1774502671.881114   27332 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1774502671.882689   27332 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1774502671.887379   27332 reader.cc:83] Reading SavedModel from: C:\Users\abhis\AppData\Local\Temp\tmp9ova99dr
+I0000 00:00:1774502671.915982   27332 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1774502671.916227   27332 reader.cc:147] Reading SavedModel debug info (if present) from: C:\Users\abhis\AppData\Local\Temp\tmp9ova99dr
+I0000 00:00:1774502672.203347   27332 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+I0000 00:00:1774502672.222822   27332 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1774502673.405362   27332 loader.cc:220] Running initialization op on SavedModel bundle at path: C:\Users\abhis\AppData\Local\Temp\tmp9ova99dr
+I0000 00:00:1774502673.768455   27332 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 1886866 microseconds.
+I0000 00:00:1774502674.172962   27332 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+TFLite saved: rose_disease_model.tflite  (4625.4 KB)
+
+Android: copy rose_disease_model.tflite + class_indices.json to app/src/main/assets/

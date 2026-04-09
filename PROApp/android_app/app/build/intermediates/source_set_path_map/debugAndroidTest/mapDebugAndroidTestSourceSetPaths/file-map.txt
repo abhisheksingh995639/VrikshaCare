@@ -1,0 +1,36 @@
+com.example.rosehealth.test.app-jetified-activity-1.8.0-0 C:\Users\abhis\.gradle\caches\8.13\transforms\04a5e63060ff32672b1befadb51b21bd\transformed\jetified-activity-1.8.0\res
+com.example.rosehealth.test.app-jetified-lifecycle-viewmodel-savedstate-2.6.2-1 C:\Users\abhis\.gradle\caches\8.13\transforms\07fd340ddcadb629012299b6eaa3e137\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.rosehealth.test.app-jetified-ui-graphics-release-2 C:\Users\abhis\.gradle\caches\8.13\transforms\12e066ed8389145fc846b70bf91b502c\transformed\jetified-ui-graphics-release\res
+com.example.rosehealth.test.app-jetified-core-1.5.0-3 C:\Users\abhis\.gradle\caches\8.13\transforms\31e1f5bb729dd208b9d059a709d6ad6f\transformed\jetified-core-1.5.0\res
+com.example.rosehealth.test.app-core-runtime-2.2.0-4 C:\Users\abhis\.gradle\caches\8.13\transforms\3866263b3e662444b51e4b325467e33b\transformed\core-runtime-2.2.0\res
+com.example.rosehealth.test.app-jetified-ui-unit-release-5 C:\Users\abhis\.gradle\caches\8.13\transforms\3af420ec691adf2347ee5e0e316ca738\transformed\jetified-ui-unit-release\res
+com.example.rosehealth.test.app-lifecycle-livedata-core-2.6.2-6 C:\Users\abhis\.gradle\caches\8.13\transforms\3f06f4b735f5c22938b9939f7b999c22\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.rosehealth.test.app-jetified-startup-runtime-1.1.1-7 C:\Users\abhis\.gradle\caches\8.13\transforms\4009683a95d035d4941ffe7cbfe569e1\transformed\jetified-startup-runtime-1.1.1\res
+com.example.rosehealth.test.app-jetified-ui-text-release-8 C:\Users\abhis\.gradle\caches\8.13\transforms\49546092bb62601ff022c0a608ce012a\transformed\jetified-ui-text-release\res
+com.example.rosehealth.test.app-jetified-ui-util-release-9 C:\Users\abhis\.gradle\caches\8.13\transforms\5047bad639b7c06c9b88d47f72b7349c\transformed\jetified-ui-util-release\res
+com.example.rosehealth.test.app-jetified-lifecycle-runtime-ktx-2.6.2-10 C:\Users\abhis\.gradle\caches\8.13\transforms\562f1a3ac602d09a1818269a42739b0a\transformed\jetified-lifecycle-runtime-ktx-2.6.2\res
+com.example.rosehealth.test.app-jetified-savedstate-ktx-1.2.1-11 C:\Users\abhis\.gradle\caches\8.13\transforms\571c7a5cb83673be2c58ed4e2c0cad67\transformed\jetified-savedstate-ktx-1.2.1\res
+com.example.rosehealth.test.app-jetified-profileinstaller-1.3.1-12 C:\Users\abhis\.gradle\caches\8.13\transforms\57362c5988f1eb5628d28cc840c9407e\transformed\jetified-profileinstaller-1.3.1\res
+com.example.rosehealth.test.app-jetified-runtime-saveable-release-13 C:\Users\abhis\.gradle\caches\8.13\transforms\6e788c33f16c9821e261800923d3539b\transformed\jetified-runtime-saveable-release\res
+com.example.rosehealth.test.app-jetified-ui-test-release-14 C:\Users\abhis\.gradle\caches\8.13\transforms\71a664ef97ea379e76310e4257e8b04d\transformed\jetified-ui-test-release\res
+com.example.rosehealth.test.app-jetified-ui-release-15 C:\Users\abhis\.gradle\caches\8.13\transforms\8f3a77c9bcb0d491f5834013569f1c58\transformed\jetified-ui-release\res
+com.example.rosehealth.test.app-jetified-runtime-release-16 C:\Users\abhis\.gradle\caches\8.13\transforms\95dcfea4275543041373b0a14537e8ca\transformed\jetified-runtime-release\res
+com.example.rosehealth.test.app-jetified-savedstate-1.2.1-17 C:\Users\abhis\.gradle\caches\8.13\transforms\a204e2c283854e617ef2bfc2fa2723e5\transformed\jetified-savedstate-1.2.1\res
+com.example.rosehealth.test.app-jetified-lifecycle-viewmodel-ktx-2.6.2-18 C:\Users\abhis\.gradle\caches\8.13\transforms\a33b2d8761e1ac012d2ead67817c64d4\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\res
+com.example.rosehealth.test.app-lifecycle-runtime-2.6.2-19 C:\Users\abhis\.gradle\caches\8.13\transforms\a64939a77a96adf1e0e6a498ae954252\transformed\lifecycle-runtime-2.6.2\res
+com.example.rosehealth.test.app-jetified-emoji2-1.4.0-20 C:\Users\abhis\.gradle\caches\8.13\transforms\ae2b75e12c3813eb332b2e0f68c30dd8\transformed\jetified-emoji2-1.4.0\res
+com.example.rosehealth.test.app-lifecycle-viewmodel-2.6.2-21 C:\Users\abhis\.gradle\caches\8.13\transforms\af78b55b553a071fa68e9342fc1e6a14\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.rosehealth.test.app-jetified-customview-poolingcontainer-1.0.0-22 C:\Users\abhis\.gradle\caches\8.13\transforms\c2310e045c613afa6b151f4ce0b2d99b\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.example.rosehealth.test.app-jetified-core-ktx-1.10.1-23 C:\Users\abhis\.gradle\caches\8.13\transforms\c6848e9701f2047fc27879d392389c5a\transformed\jetified-core-ktx-1.10.1\res
+com.example.rosehealth.test.app-jetified-annotation-experimental-1.3.0-24 C:\Users\abhis\.gradle\caches\8.13\transforms\c68763c89829776b661e04e5854f62d4\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.rosehealth.test.app-jetified-lifecycle-process-2.6.2-25 C:\Users\abhis\.gradle\caches\8.13\transforms\dd50fad20e3e1aa803f9390083714b8d\transformed\jetified-lifecycle-process-2.6.2\res
+com.example.rosehealth.test.app-jetified-activity-compose-1.8.0-26 C:\Users\abhis\.gradle\caches\8.13\transforms\e651875413aae4dd212ffbe35f6ae122\transformed\jetified-activity-compose-1.8.0\res
+com.example.rosehealth.test.app-jetified-activity-ktx-1.8.0-27 C:\Users\abhis\.gradle\caches\8.13\transforms\e7802e4cd657ec576bb3019056165b54\transformed\jetified-activity-ktx-1.8.0\res
+com.example.rosehealth.test.app-jetified-ui-test-junit4-release-28 C:\Users\abhis\.gradle\caches\8.13\transforms\eff2be1490aea7db603c45081ccb3d6c\transformed\jetified-ui-test-junit4-release\res
+com.example.rosehealth.test.app-core-1.10.1-29 C:\Users\abhis\.gradle\caches\8.13\transforms\f03bb22329c19ea0f8fa359c8fc38e24\transformed\core-1.10.1\res
+com.example.rosehealth.test.app-jetified-ui-geometry-release-30 C:\Users\abhis\.gradle\caches\8.13\transforms\f9162a304835cb291270ddbe83efe347\transformed\jetified-ui-geometry-release\res
+com.example.rosehealth.test.app-androidTest-31 C:\Users\abhis\OneDrive\Desktop\PROEXE 2\PlantDisease\PROApp\android_app\app\build\generated\res\resValues\androidTest\debug
+com.example.rosehealth.test.app-updated_navigation_xml-32 C:\Users\abhis\OneDrive\Desktop\PROEXE 2\PlantDisease\PROApp\android_app\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.example.rosehealth.test.app-mergeDebugAndroidTestResources-33 C:\Users\abhis\OneDrive\Desktop\PROEXE 2\PlantDisease\PROApp\android_app\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.rosehealth.test.app-mergeDebugAndroidTestResources-34 C:\Users\abhis\OneDrive\Desktop\PROEXE 2\PlantDisease\PROApp\android_app\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.rosehealth.test.app-debugAndroidTest-35 C:\Users\abhis\OneDrive\Desktop\PROEXE 2\PlantDisease\PROApp\android_app\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
