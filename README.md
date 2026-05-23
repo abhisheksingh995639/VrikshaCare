@@ -9,11 +9,11 @@
 [![Tkinter](https://img.shields.io/badge/Tkinter-UI-blueviolet?style=for-the-badge)]()
 [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)]()
 
+<img width="1857" height="460" alt="image" src="https://github.com/user-attachments/assets/3f50828e-315c-4767-944b-9ffa35c6df74" />
+
 VrikshaCare is an intelligent plant health analysis tool specifically designed for identifying various diseases in rose leaves. Utilizing the power of **EfficientNetB0**, the model detects diseases ranging from fungal infections to environmental stress, providing actionable treatment recommendations.
 
 </div>
-
-<img width="1857" height="460" alt="image" src="https://github.com/user-attachments/assets/3f50828e-315c-4767-944b-9ffa35c6df74" />
 
 ---
 
