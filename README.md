@@ -25,8 +25,8 @@ VrikshaCare is an intelligent plant health analysis tool specifically designed f
 
 ## 🩺 Supported Diagnoses
 
-| Diagnosis | Icon | Primary Cause | Severity |
-|---|:---:|---|:---:|
+                                | Diagnosis | Icon | Primary Cause | Severity |
+                                |---|:---:|---|:---:|
 | **Black Spot** | 🔴 | Fungal infection (*Diplocarpon rosae*) | High |
 | **Downy Mildew** | 🔵 | Water mold spreading in humid environments | High |
 | **Dry Leaf** | 🟠 | Underwatering, heat stress, or root issues | Medium |
