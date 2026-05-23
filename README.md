@@ -13,6 +13,8 @@ VrikshaCare is an intelligent plant health analysis tool specifically designed f
 
 </div>
 
+<img width="1857" height="460" alt="image" src="https://github.com/user-attachments/assets/3f50828e-315c-4767-944b-9ffa35c6df74" />
+
 ---
 
 ## ✨ Key Features
